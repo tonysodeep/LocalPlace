@@ -35,6 +35,7 @@ const MainNavigation = (props) => {
           <span />
           <span />
           <span />
+          {/* 3 cái span là cái kebab button */}
         </button>
         <h1 className="main-navigation__title">
           <Link to={'/'}>YourPlaces</Link>
