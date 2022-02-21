@@ -8,6 +8,8 @@ import {
 } from '../../shared/utils/validators';
 import './NewPlace.css';
 
+//console log ra cái flow của validation theo thu tự 
+
 const formReducer = (state, action) => {
   switch (action.type) {
     case 'INPUT_CHANGE':
