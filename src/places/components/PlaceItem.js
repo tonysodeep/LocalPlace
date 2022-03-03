@@ -4,6 +4,7 @@ import Card from '../../shared/components/UIElements/Card';
 import Button from '../../shared/components/FormElements/Button';
 import Modal from '../../shared/components/UIElements/Modal';
 import { AuthContext } from '../../shared/context/auth-context';
+import Map from '../../shared/components/UIElements/Map';
 
 import './PlaceItem.css';
 
@@ -36,13 +37,12 @@ const PlaceItem = (props) => {
       <Modal
         show={showMap}
         onCancel={closeMapHandler}
-        header={props.address}
         contentClass="place-item__modal-content"
         footerClass="place-item__modal-action"
         footer={<Button onClick={closeMapHandler}>CLOSE</Button>}
       >
         <div className="map-container">
-          <h2>The Map!!</h2>
+          <Map videoUrl="https://www.youtube.com/watch?v=7sDY4m8KNLc" />
         </div>
       </Modal>
       <Modal
